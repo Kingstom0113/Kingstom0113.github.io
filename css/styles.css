@@ -1,0 +1,27 @@
+/*Mobile first*/
+
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins-Medium.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+header h1 {
+font-size: 2em;
+}
+header nav span {
+    color: grey;
+}
