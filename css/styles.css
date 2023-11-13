@@ -1,20 +1,18 @@
 /*Mobile first*/
 
-@font-face {
-    font-family: Poppins;
-    src: url(/fonts/Poppins-Medium.ttf);
-}
-
 body {
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Medium.ttf');
 }
 
-/*Header*/
+/*----------------------HEADER----------------------*/
 header{
     position: sticky;
     top: 0;
+    background-color:aliceblue;
 }
 nav{
     display: flex;
@@ -25,7 +23,13 @@ nav{
 }
 header h1 {
 font-size: 2em;
+border-right: solid;
+padding-right: 10px;
+border-color:cadetblue;
+font-family: Poppins;
+src: url(../fonts/Poppins-Black.ttf);
 }
+
 header nav span {
     color: grey;
 }
@@ -60,7 +64,71 @@ nav section {
     display: flex;
     align-items:center;
 }
-
-nav span{
-    margin-left: 10px;
+nav span {
+    padding-left: 10px;
 }
+
+/*----------------------MAIN----------------------*/
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    grid-template-areas: 
+    "div1"
+    "div2"
+    "div3"
+    "div4";
+    margin: 5%;   
+}
+
+@media only screen and (min-width:768px) {
+    .contenedor{
+        display: grid;
+            grid-template-columns: repeat(2, 1fr), minmax(100px, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 10px;
+            grid-template-areas:
+                "div1 div2"
+                "div3 div4";
+            margin: 5%;
+    }
+}
+
+.div1{
+    grid-area: div1;
+    padding: 15%;
+    
+}
+.div1 h1{
+    font-size:80px;
+}
+
+.div2{
+    grid-area: div2;
+    background-color: lightgray;
+    margin: 15%;
+    padding: 2%;
+}
+.div2 p{
+    font-size: 32px;
+
+}
+.div3{
+    grid-area: div3;
+    padding: 15%;
+}
+
+.div3 p{
+    font-size: 20px;
+}
+
+.div4{
+    grid-area: div4;
+    padding: 15%;
+}
+
+.div4 img{
+    width: 100%;
+}
+
