@@ -7,9 +7,17 @@ body{
 
 .contenedor{
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr, minmax(33vh, 1fr));
+    
+
+
+
 }
 
 form{
+
+    grid-area: Formulario;
     border:solid 3px;
     border-radius:10px
 }
