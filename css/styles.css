@@ -104,6 +104,8 @@ nav span {
     font-size:80px;
 }
 
+
+
 .div2{
     grid-area: div2;
     background-color: lightgray;
@@ -132,3 +134,66 @@ nav span {
     width: 100%;
 }
 
+.punto{
+    border-radius: 500px;
+    background-color: rgba(0, 0, 0, 1);
+    width: 24px;
+    height: 24px;
+}
+
+/*----------------------ANIMACIÓN----------------------*/
+.titlefont{
+    font-size: 120px;
+}
+
+.titlefont, .punto{
+    animation: movimiento 5s linear infinite;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateX(-100vh);
+    }
+
+    25% {
+        transform: translateX(-50vh);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(50vh);
+    }
+
+    100% {
+        transform: translateX(100vh);
+    }
+}
+
+.contenedor-proyectos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) minmax(500px, 1fr);
+}
+/*Mientras tanto hago otras cosas dejo eso así*/
+section article{
+    background-color: cornflowerblue;
+    border:solid black;
+    color:aliceblue;
+    text-align: center;
+}
+
+/*Formulario*/
+.font80{
+    font-size: 80px;
+}
+
+.contact-button{
+    color:blueviolet;
+    border:  solid 3px;
+    background-color:#FFFFFF;
+    border-radius:20px;
+    max-width: 10vh;
+}
