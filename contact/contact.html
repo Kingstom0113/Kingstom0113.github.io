@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/stylesContact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
+
 <body class="contenedor">
-    <form action="mailto:manuelsr0113@gmail.com" method="post" enctype="text/plain">
-        <h1>Formulario de contacto</h1>
-        <label for="empresa">Empresa:</label>
-        <input type="text" id="empresa" name="empresa" required>
-    
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
-    
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-    
-        <button type="submit">Enviar</button>
-    </form>
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <section>
+        <form method='POST' action='enviar.php' class="form">
+            <h2>Enviame un correo</h2>
+            <div class="form-group">
+                <i class="bi bi-person-fill"></i>
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" name='nombre' id="nombre" >
+            </div>
+            <div class="form-group">
+                <i class="bi bi-envelope-fill"></i>
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name='email' id="email" >
+            </div>
+            <div class="form-group">
+                <i class="bi bi-chat-fill"></i>
+                <label for="exampleTextarea">Mensaje</label>
+                <textarea class="form-control" name='mensaje' id="mensaje" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
+
 </html>
