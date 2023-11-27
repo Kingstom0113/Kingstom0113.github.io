@@ -187,16 +187,38 @@ section article{
 
 /*Formulario*/
 .section-form{
-     
+     text-align: center;
+     padding-top: 5vh;
 }
 .font80{
     font-size: 80px;
+}
+
+.font120{
+    font-size: 120px;
 }
 
 .contact-button{
     color:blueviolet;
     border:  solid 3px;
     background-color:#FFFFFF;
-    border-radius:20px;
+    border-radius:40px;
     max-width: 10vh;
+    padding-top:1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+hr{
+    border-width: 5vh;
+    border-color:aqua;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+footer{
+    display:flex;
+    justify-content:space-between;
+    border-top: solid 1px grey;
 }
